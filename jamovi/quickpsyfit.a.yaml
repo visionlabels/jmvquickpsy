@@ -1,0 +1,63 @@
+---
+name:  quickpsyfit
+title: Fit Psychometric Function
+menuGroup: jmvquickpsy
+version: '1.0.0'
+jas: '1.2'
+
+options:
+    - name: data
+      type: Data
+
+    - name: k
+      title: Response Variable
+      type: Variable
+      permitted: [numeric]
+
+    - name: x
+      title: Explanatory Variable
+      type: Variable
+      permitted: [numeric]
+
+    - name: n
+      title: Number of trials per value
+      type: Variable
+      permitted: [numeric]
+
+    - name: group
+      title: Grouping Variable
+      type: Variables
+
+    - name: fun
+      title: Shape of psychometric curve
+      type: List
+      options:
+        - title: Cumulative Normal
+          name:  cum_normal_fun
+        - title: Logistic
+          name:  logistic_fun
+        - title: Weibull
+          name:  weibull_fun
+      default: cum_normal_fun
+      
+
+    - name: guess
+      title: Guessing Rate
+      type: Number
+      default: 0
+      
+    - name: lapses
+      title: Lapse Rate
+      type: Number
+      default: 0
+
+    - name: plotcurve
+      title: Plot the curve
+      type: Bool
+      default: false
+
+    - name: log
+      title: Explanatory variable on log scale
+      type: Bool
+      default: false
+...

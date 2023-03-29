@@ -1,0 +1,58 @@
+---
+name:  quickpsyfit
+title: Fit Psychometric Function
+jrs:   '1.1'
+
+items:
+    - name:  text
+      title: Fit Psychometric Function
+      type:  Preformatted
+
+    - name:  params
+      title: Fitted parameters
+      type:  Table
+      columns:
+        - name: cond
+          type: text
+          title: Condition
+        - name: par
+          type: text
+          title: Parameter
+        - name: value
+          type: number
+          title: Estimate
+        - name: low
+          type: number
+          title: Low
+        - name: high
+          type: number
+          title: High
+
+    - name:  threshold
+      title: Threshold estimates
+      type:  Table
+      columns: 
+        - name: cond
+          type: text
+          title: Condition
+        - name: prob
+          type: number
+          title: Probability
+        - name: value
+          type: number
+          title: Estimate
+        - name: low
+          type: number
+          title: Low
+        - name: high
+          type: number
+          title: High
+
+    - name:  plotcurve
+      title: Fitted psychometric curve
+      type:  Image
+      width: 400
+      height: 300
+      renderFun: .plotCurve
+
+...

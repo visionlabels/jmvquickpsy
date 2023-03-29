@@ -1,0 +1,23 @@
+---
+title: Fits psychometric functions
+name: jmvquickpsy
+version: 0.0.1
+jms: '1.0'
+authors:
+  - 'Daniel Linares, Joan López-Moliner'
+maintainer: Jiri Lukavsky <lukavsky@praha.psu.cas.cz>
+date: '1970-01-01'
+type: R
+description: >-
+  Jamovi module for psychometric functions (normal, logistic, Weibull) for
+  multiple groups. Based on quickpsyc package by Linares & López-Moliner.
+analyses:
+  - title: Fit Psychometric Function
+    name: quickpsyfit
+    ns: jmvquickpsy
+    menuGroup: jmvquickpsy
+    menuTitle: Fit Psychometric Function
+usesNative: true
+minApp: 1.0.8
+
+...

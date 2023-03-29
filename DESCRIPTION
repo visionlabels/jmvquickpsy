@@ -1,0 +1,25 @@
+Package: jmvquickpsy
+Type: Package
+Title: Fits psychometric functions
+Version: 0.0.1
+Authors@R: 
+    c(person(given = "Daniel",
+             family = "Linares",
+             role = c("aut", "cre"),
+             email = "danilinares@gmail.com"),
+     person(given = "Joan",
+             family = "López-Moliner",
+             role = c("aut"),
+             email = "j.lopezmoliner@gmail.com"))
+Maintainer@R: 
+  person(given = "Jiri",
+           family = "Lukavsky",
+           role = c("aut", "cre"),
+           email = "lukavsky@praha.psu.cas.cz",
+           comment = c(ORCID = "0000-0002-1082-229X"))
+Description: Jamovi module for psychometric functions (normal, logistic,
+    Weibull) for multiple groups. Based on quickpsyc package by Linares & López-Moliner.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: jmvcore (>= 0.8.5), R6, quickpsy, ggplot2
